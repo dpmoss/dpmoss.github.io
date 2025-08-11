@@ -1,3 +1,3 @@
 new VenoBox({
-    
+    infinigall: true
 });

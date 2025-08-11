@@ -1,19 +1,22 @@
-// Breakpoints
+// Widths
 
 $width-small: 450px;
 $width-mid: 750px;
 $width-large: 900px;
 $width-x-large: 1200px;
 
+$header-width: 70ch;
+
 // Colors
-$background: #263238;
+
+$bg-color: #263238;
 $text-color: #eceff1;
 $accent-color: #4fc3f7;
 $accent-color-light: #b3e5fc;
 
 // Fonts
 
-$font-fam: 'Rubik', sans-serif;
+$font-family: 'Rubik', sans-serif;
 $fw-light: 300;
 $fw-bold: 700;
 
