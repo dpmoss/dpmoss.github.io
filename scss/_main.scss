@@ -11,7 +11,7 @@ body {
     font-family: $font-family;
     background: $bg-color;
     color: $text-color;
-    font-weight: $fw-light;
+    font-weight: $font-light;
     line-height: 1.5;
 }
 
@@ -22,30 +22,35 @@ h1,
 h2,
 h3 {
     color: $accent-color;
-    font-weight: $fw-bold;
+    font-weight: $font-medium;
     margin: 2.75rem 0 1.05rem;
     line-height: 1.15;
 }
 
 h1 {
-    font-size: 3.157em;
+    font-size: $font-size-1;
 }
 
 h2 {
-    font-size: 2.369em;
+    font-size: $font-size-2;
 }
 
 h3 {
-    font-size: 1.777em;
+    font-size: $font-size-3;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: $font-size-4;
     margin-bottom: 1.15rem;
 }
 
 small {
-    font-size: 0.889em;
+    font-size: $font-size-5;
+}
+
+b,
+strong {
+    font-weight: $font-medium;
 }
 
 a,
@@ -58,14 +63,6 @@ a:hover,
 a:active {
     color: $accent-color;
 
-}
-
-.link-cta:after {
-    content: " →";
-}
-
-.link-cta:hover {
-    transition: all $delay;
 }
 
 img {
@@ -86,12 +83,17 @@ img {
     max-width: $header-width;
     text-align: center;
     margin: 0 auto;
-    padding: 0 0.5rem;
+    padding: 0 0.75rem;
+}
+
+.work {
+    margin: 3.157em 0.5em;
+    padding: 0;
 }
 
 .gallery {
     box-sizing: border-box;
-    margin: 3.157em 0.5em;
+    margin: 0;
     padding: 0;
     list-style: none;
 
@@ -155,15 +157,26 @@ img {
     }
 }
 
+// CTAs
+
+.link-cta:after {
+    content: " →";
+}
+
+.link-cta:hover {
+    transition: all $delay;
+}
 
 // Footer
 .site-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 0.25rem;
     border-top: 1px solid $accent-color-light;
+
+    p {
+        font-size: $font-size-5;
+    }
 
     .social-icon {
         margin: 0 0.5rem;
