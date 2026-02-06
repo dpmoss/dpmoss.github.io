@@ -87,7 +87,7 @@ img {
 }
 
 .work {
-    margin: 3.157em 0.5em;
+    margin: $margin-large $margin-small;
     padding: 0;
 }
 
@@ -105,7 +105,7 @@ img {
     // Set up CSS grid
     display: grid;
     justify-content: center;
-    grid-gap: 5px;
+    gap: $gap;
     grid-template-columns: repeat(2, 1fr);
 
     img {
@@ -114,10 +114,10 @@ img {
 }
 
 .gallery-item {
-    margin: 0 0 10px 0;
+    margin: 0 0 $gap 0;
     padding: 0;
     flex: auto;
-    max-width: 300px;
+    max-width: $width-x-small;
 
     img {
         width: 100%;
@@ -128,8 +128,6 @@ img {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
-
-
 }
 
 @media (min-width: $width-large) {
@@ -176,15 +174,5 @@ img {
 
     p {
         font-size: $font-size-5;
-    }
-
-    .social-icon {
-        margin: 0 0.5rem;
-        padding: .5rem;
-    }
-
-    .social-icon:hover {
-        background-color: $text-color;
-        transition: all $delay;
     }
 }
